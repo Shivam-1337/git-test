@@ -3,7 +3,8 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is 19MCA8089'
+                     javac Tester.java
+                     echo "Compling....."
                  }
                  }
                  stage('Two') {
@@ -18,6 +19,7 @@ pipeline {
                        }
                  }
                  steps {
+                          java Tester
                        echo "Hello Jenkins"
                  }
                  }

@@ -1,44 +1,25 @@
-/*LARAVEL
-
-MVC
-
-composer create-project laravel/laravel pro_4b1
-
-
-
-
-JAVA
-*/
-interface bike
-{
- 	int speed = 60;
-	public void coverDistance();
-}
-interface car
-{
-int distance = 60;
-public void speed();
-}
-
-class TwoWheeler implements bike,car
-{
-@Override
-public void speed()
-{
-System.out.println("Speed"+distance/speed);
-}
-@Override
-public void coverDistance()
-{
-System.out.println("Distance"+speed*distance);
-}
-
-}
-public class Tester
-{
-public static void main(String args[]){
-TwoWheeler splender = new TwoWheeler();
-splender.speed();
-splender.coverDistance();
-}
+// Java program to ReverseString using ByteArray.
+import java.lang.*;
+import java.io.*;
+import java.util.*;
+ 
+// Class of ReverseString
+class ReverseString {
+    public static void main(String[] args)
+    {
+        String input = "GeeksforGeeks";
+ 
+        // getBytes() method to convert string
+        // into bytes[].
+        byte[] strAsByteArray = input.getBytes();
+ 
+        byte[] result = new byte[strAsByteArray.length];
+ 
+        // Store result in reverse order into the
+        // result byte[]
+        for (int i = 0; i < strAsByteArray.length; i++)
+            result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+ 
+        System.out.println(new String(result));
+    }
 }

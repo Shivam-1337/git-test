@@ -7,7 +7,7 @@ import java.util.*;
 class Tester {
     public static void main(String[] args)
     {
-        String input = "GeeksforGeeks";
+        String input = "Shivam";
  
         // getBytes() method to convert string
         // into bytes[].
